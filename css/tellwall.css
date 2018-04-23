@@ -1,7 +1,6 @@
 html{
 	font-size: 12px;
 }
-
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +8,10 @@ body{
     height: 100%;
     background-color: #fff;
     color: #303033;
+}
+ul{
+margin: 0;
+padding: 0;
 }
 .container{
 	height: 100%;
@@ -19,15 +22,103 @@ body{
 	padding: 1.75em 0 0 0;
 	box-sizing: border-box;
 }
+
+/*下拉菜单开始*/
+.tell-dropbtn {
+background: url(../images/icon/dropmenu.svg);
+background-size: 1.75em 1.75em;
+background-repeat: no-repeat; 
+height: 1.75em;
+width: 1.75em;
+border: none;
+cursor: pointer;
+}
+.tell-dropdown {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    display: inline-block;
+}
+.tell-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 1.2em;
+}
+.tell-dropdown-content a {
+    /*color: black;
+    color: #075DB3;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.tell-dropdown-content a:hover {background-color: #f1f1f1}
+
+.tell-dropdown:hover .tell-dropdown-content {
+    display: block;
+}
+.tell-dropdown:hover .tell-dropbtn {
+    background:url(../images/icon/shut-dropdown.svg);
+    background-size: 1.75em 1.75em;
+    background-repeat: no-repeat; 
+    height: 1.75em;
+    width: 1.75em;
+}
+/*下拉菜单结束*/
+
+.tell-header{
+margin: 1em auto;
+}
+.tell-header-h1{
+	font-size: 1.75rem;
+	font-weight: 200
+}
+
+#tell-footer{
+	margin-top: 1.5em;
+}
+.tell-footer-ul{
+	display: block;
+	overflow: hidden;
+	white-space:nowrap;
+	-webkit-padding-start: 0;
+}
+.tell-footer-li{
+	list-style: none;
+	float: left; 
+	display: inline-block;
+	margin-left: 0
+}
+.tell-footer-icon{
+  width: 2.5em;
+  height: 2.5em;
+}
+.tell-footer-icon-right{
+	margin-right: 3.5em
+}
+
+.tell-shuaxin{
+	background: url(../images/icon/shuaxin.svg);
+background-size: 2.5em 2.5em;
+background-repeat: no-repeat; 
+height: 2.5em;
+width: 2.5em;
+border: none;
+display: block;
+}
+.tell-shuaxin-a:hover .tell-shuaxin{
+	background: url(../images/icon/shuaxin-hover.svg);
+background-size: 2.5em 2.5em;
+background-repeat: no-repeat; 
+height: 2.5em;
+width: 2.5em;
+border: none;
+display: block;
+}
 @media (max-width: 768px) { 
 
-	.tell-header{
-	margin: 1em auto;
-	}
-	.tell-header-h1{
-		font-size: 1.75rem;
-		font-weight: 200
-	}
 	.tell-container{
 		width: 80%;
 		height: 100%;
@@ -50,40 +141,9 @@ body{
 		float: right;
 		font-size: 1.1rem;
 	}
-
-	#tell-footer{
-		margin-top: 1.5em;
-	}
-	.tell-footer-ul{
-		display: block;
-    	overflow: hidden;
-    	white-space:nowrap;
-    	-webkit-padding-start: 0;
-	}
-	.tell-footer-li{
-		list-style: none;
-    	float: left; 
-    	display: inline-block;
-    	margin-left: 0
-	}
-	.tell-footer-icon{
-	  width: 2.5em;
-	  height: 2.5em;
-	}
-	.tell-footer-icon-right{
-		margin-right: 3.5em
-	}
-
  }
  @media (min-width: 992px) and (max-width: 1200px) {
 
-	.tell-header{
-	margin: 1em auto;
-	}
-	.tell-header-h1{
-		font-size: 1.75rem;
-		font-weight: 200
-	}
 	.tell-container{
 		width: 80%;
 		height: 100%;
@@ -106,39 +166,9 @@ body{
 		float: right;
 		font-size: 1.1rem;
 	}
-
-	#tell-footer{
-		margin-top: 1.5em;
-	}
-	.tell-footer-ul{
-		display: block;
-    	overflow: hidden;
-    	white-space:nowrap;
-    	-webkit-padding-start: 0;
-	}
-	.tell-footer-li{
-		list-style: none;
-    	float: left; 
-    	display: inline-block;
-    	margin-left: 0
-	}
-	.tell-footer-icon{
-	  width: 2.5em;
-	  height: 2.5em;
-	}
-	.tell-footer-icon-right{
-		margin-right: 3.5em
-	}
-  }
-
+}
   @media (min-width: 1200px) { 
-	.tell-header{
-	margin: 1em auto;
-	}
-	.tell-header-h1{
-		font-size: 1.75rem;
-		font-weight: 200
-	}
+
 	.tell-container{
 		width: 35%;
 		height: 100%;
@@ -162,27 +192,4 @@ body{
 		font-size: 1.1rem;
 	}
 
-	#tell-footer{
-		margin-top: 1.5em;
-	}
-	.tell-footer-ul{
-		display: block;
-    	overflow: hidden;
-    	white-space:nowrap;
-    	-webkit-padding-start: 0;
-	}
-	.tell-footer-li{
-		list-style: none;
-    	float: left; 
-    	display: inline-block;
-    	margin-left: 0
-	}
-	.tell-footer-icon{
-	  width: 2.5em;
-	  height: 2.5em;
-	}
-	.tell-footer-icon-right{
-		margin-right: 3.5em
-	}
-
-   }
+}

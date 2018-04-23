@@ -4,13 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <meta name="keywords" content="Tellwall,表白驿站">
     <meta name="description" content="不论在哪里，总有那么几个句子能穿透你的心。把这些句子汇聚起来，传递更多的感动。简单来说，Tellwall指的就是一句话，或是感动，或是开心，有或是单纯的回忆，留下你所喜欢的那一句话，与大家分享，这就是Tellwall存在的目的。">
-    <!-- <meta name="full-screen" content="yes">
-    <meta name="x5-fullscreen" content="true"> --><!-- 
-    <meta name="browsermode" content="application">
-    <meta name="x5-page-mode" content="app"> -->
     <title>Tellwall.org</title>
     <link rel="stylesheet" href="css/tellwall.css">
   </head>
@@ -18,45 +13,51 @@
     <div class="container">
         <header id="tell-header">
           <h1 class="tell-header-h1">Tellwall.org</h1>
+          <div class="tell-dropdown">
+            <button class="tell-dropbtn"></button>
+            <div class="tell-dropdown-content">
+              <a href="https://www.bbai520.com">表白驿站</a>
+              <a href="https://pixel.net.cn">pixel.net.cn</a>
+              <a href="http://www.bcdon.com">blog.bcdon.con</a>
+            </div>
+          </div>
         </header>
         <div class="tell-container"> 
           <div class="tell-image"><img src="https://source.unsplash.com/random/800x400" alt=""></div>
           <div class="tell-content">
-            
-    <p id="hitokoto">:D 获取中...</p>
+              <p id="hitokoto">:D 获取中...</p>
           </div>
           <div class="tell-author"><p> ——「<span id="from">:D 获取中...</span>」</p></div>
         </div>
         <footer id="tell-footer">
           <ul class="tell-footer-ul">
             <!-- <li class="tell-footer-li"><img src="images/icon/menu.svg" alt="" class="tell-footer-icon tell-footer-icon-right"></li> -->
-            <li class="tell-footer-li"><a href="/"><img src="images/icon/shuaxin.svg" alt="" class="tell-footer-icon"></a></li>
+            <li class="tell-footer-li"><a href="/" class="tell-shuaxin-a"><span class="tell-shuaxin"></span></a></li>
             <!-- <li class="tell-footer-li"><img src="images/icon/share.svg" alt="" class="tell-footer-icon"></li> -->
           </ul>
 
         </footer>
     </div>
 
-<!-- 现代写法，推荐 -->
-<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
-<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-<!--End-->
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(function (res){
-      return res.json();
-    })
-    .then(function (data) {
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = data.hitokoto; 
-      var from = document.getElementById('from');
-      from.innerText = data.from; 
-    })
-    .catch(function (err) {
-      console.error(err);
-    })
-</script>
+    <!-- 一言 -->
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script>
+      fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+          return res.json();
+        })
+        .then(function (data) {
+          var hitokoto = document.getElementById('hitokoto');
+          hitokoto.innerText = data.hitokoto; 
+          var from = document.getElementById('from');
+          from.innerText = data.from; 
+        })
+        .catch(function (err) {
+          console.error(err);
+        })
+    </script>
+    <!--End-->
     <script src="js/tellwall.js"></script>
   </body>
 </html>
