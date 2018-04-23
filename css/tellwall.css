@@ -143,10 +143,10 @@ cursor: pointer;
 }
 .tell-shuaxin-a:hover .tell-shuaxin{
 	background: url(../images/icon/shuaxin-hover.svg);
-	background-size: 2.5em 2.5em;
+	background-size: 2.4em 2.4em;
 	background-repeat: no-repeat; 
-	height: 2.5em;
-	width: 2.5em;
+	height: 2.4em;
+	width: 2.4em;
 	border: none;
 	display: block;
 }
