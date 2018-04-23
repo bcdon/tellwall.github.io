@@ -9,6 +9,12 @@ body{
     background-color: #fff;
     color: #303033;
 }
+a{
+
+    text-decoration: none;
+    color: #303033;
+}
+
 ul{
 margin: 0;
 padding: 0;
@@ -22,7 +28,13 @@ padding: 0;
 	padding: 1.75em 0 0 0;
 	box-sizing: border-box;
 }
-
+.tell-header{
+margin: 1em auto;
+}
+.tell-header-h1{
+	font-size: 1.5rem;
+	font-weight: 200
+}
 /*下拉菜单开始*/
 .tell-dropbtn {
 background: url(../images/icon/dropmenu.svg);
@@ -68,14 +80,6 @@ cursor: pointer;
     width: 1.75em;
 }
 /*下拉菜单结束*/
-
-.tell-header{
-margin: 1em auto;
-}
-.tell-header-h1{
-	font-size: 1.75rem;
-	font-weight: 200
-}
 
 #tell-footer{
 	margin-top: 1.5em;
