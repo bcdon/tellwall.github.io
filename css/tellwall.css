@@ -31,7 +31,7 @@ padding: 0;
 margin: 1em auto;
 }
 .tell-header-h1 a{
-	
+
     text-decoration: none;
     color: #303033;
 }
@@ -85,6 +85,30 @@ cursor: pointer;
 }
 /*下拉菜单结束*/
 
+.tell-container{
+	width: 80%;
+	height: 100%;
+	margin: 1.75em auto;
+	border-radius: 30px;
+	box-shadow: 0 0 100px #e4e8eb;
+}
+.tell-image img{
+	width: 100%;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+}
+.tell-content{
+	margin: 2em 2em 0;
+	font-size: 1.25rem;
+}
+
+.tell-author{
+	margin: 0 2em 2em;
+	float: right;
+	font-size: 1.1rem;
+}
+
+
 #tell-footer{
 	margin-top: 1.5em;
 }
@@ -110,95 +134,34 @@ cursor: pointer;
 
 .tell-shuaxin{
 	background: url(../images/icon/shuaxin.svg);
-background-size: 2.5em 2.5em;
-background-repeat: no-repeat; 
-height: 2.5em;
-width: 2.5em;
-border: none;
-display: block;
+	background-size: 2.5em 2.5em;
+	background-repeat: no-repeat; 
+	height: 2.5em;
+	width: 2.5em;
+	border: none;
+	display: block;
 }
 .tell-shuaxin-a:hover .tell-shuaxin{
 	background: url(../images/icon/shuaxin-hover.svg);
-background-size: 2.5em 2.5em;
-background-repeat: no-repeat; 
-height: 2.5em;
-width: 2.5em;
-border: none;
-display: block;
+	background-size: 2.5em 2.5em;
+	background-repeat: no-repeat; 
+	height: 2.5em;
+	width: 2.5em;
+	border: none;
+	display: block;
 }
+
 @media (max-width: 768px) { 
 
-	.tell-container{
-		width: 80%;
-		height: 100%;
-		margin: 1.75em auto;
-		border-radius: 30px;
-		box-shadow: 0 0 100px #e4e8eb;
-	}
-	.tell-image img{
-		width: 100%;
-		border-top-left-radius:30px;
-		border-top-right-radius:30px;
-	}
-	.tell-content{
-		margin: 2em 2em 0;
-		font-size: 1.25rem;
-	}
-
-	.tell-author{
-		margin: 0 2em 2em;
-		float: right;
-		font-size: 1.1rem;
-	}
  }
- @media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
 
-	.tell-container{
-		width: 80%;
-		height: 100%;
-		margin: 1.75em auto;
-		border-radius: 30px;
-		box-shadow: 0 0 100px #e4e8eb;
-	}
-	.tell-image img{
-		width: 100%;
-		border-top-left-radius:30px;
-		border-top-right-radius:30px;
-	}
-	.tell-content{
-		margin: 2em 2em 0;
-		font-size: 1.25rem;
-	}
-
-	.tell-author{
-		margin: 0 2em 2em;
-		float: right;
-		font-size: 1.1rem;
-	}
+	
 }
-  @media (min-width: 1200px) { 
+@media (min-width: 1200px) { 
 
 	.tell-container{
 		width: 35%;
-		height: 100%;
-		margin: 1.75em auto;
-		border-radius: 30px;
-		box-shadow: 0 0 100px #e4e8eb;
-	}
-	.tell-image img{
-		width: 100%;
-		border-top-left-radius:30px;
-		border-top-right-radius:30px;
-	}
-	.tell-content{
-		margin: 2em 2em 0;
-		font-size: 1.25rem;
-	}
-
-	.tell-author{
-		margin: 0 2em 2em;
-		float: right;
-		font-size: 1.1rem;
 	}
 
 }
